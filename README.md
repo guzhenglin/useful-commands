@@ -1,9 +1,9 @@
 # useful-commands
-**修改键盘映射**
+### 修改键盘映射
 ```shell
 sudo vi /usr/share/X11/xkb/keycodes/evdev
 ```
-*Windows下*
+*Windows*
 ```c
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout\Scancode Map填值
 00 00 00 00 00 00 00 00
