@@ -3,3 +3,10 @@
 ```shell
 sudo vi /usr/share/X11/xkb/keycodes/evdev
 ```
+*Windows下*
+```c
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout\Scancode Map填值
+00 00 00 00 00 00 00 00
+02 00 00 00 1C 00 3A 00              //00000002：两个功能交换  |  键盘扫描值(小端序)，用001C(Enter)实现003A(Caps_Lock)的功能
+3A 00 1C 00 00 00 00 00              //00 00 00 00结尾
+```
